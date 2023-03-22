@@ -1,9 +1,18 @@
+car_running = False
 while True:
     car_command = input('> ').upper()
     if car_command == "START":
-        print('Car started...Ready to go!')
+        if car_running:
+            print('Car already running.')
+        else:
+            print('Car started...Ready to go!')
+            car_running = True
     elif car_command == "STOP":
-        print('Car stopped.')
+        if not car_running:
+            print('Car already stopped')
+        else:
+            print('Car stopped.')
+            car_running = False
     elif car_command == "QUIT":
         print('Exiting program...')
         break
