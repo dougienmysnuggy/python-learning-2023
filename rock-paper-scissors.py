@@ -9,3 +9,15 @@ Rock beats scissors
 Scissors beats paper
 Paper beats rock
 """
+
+def get_user_input():
+    input('(R)ock, (P)aper, (S)cissors, (Q)uit')
+
+def determine_winner():
+
+def main():
+    number_of_players = input('Number of players (0-2)?')
+    
+        
+if __name__ == "__main__":
+    main()
